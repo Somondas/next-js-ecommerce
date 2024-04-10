@@ -1,4 +1,5 @@
-import { Button } from "@/components/ui/button";
+"use client";
+import { Modal } from "@/components/ui/modal";
 import { UserButton } from "@clerk/nextjs";
 
 import React from "react";
@@ -6,7 +7,9 @@ import React from "react";
 const SetupPage = () => {
   return (
     <div>
-      <UserButton afterSignOutUrl="/" />
+      <Modal title="Test" description="test desc" isOpen onclose={() => {}}>
+        Clildren
+      </Modal>
     </div>
   );
 };
