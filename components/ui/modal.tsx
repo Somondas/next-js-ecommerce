@@ -6,7 +6,7 @@ import {
   DialogContent,
   DialogDescription,
   DialogHeader,
-} from "./dialog";
+} from "@/components/ui/dialog";
 import { DialogTitle } from "@radix-ui/react-dialog";
 
 interface ModalProps {
