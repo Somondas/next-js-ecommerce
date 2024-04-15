@@ -41,7 +41,8 @@ export const StoreModal = () => {
       setLoading(true);
       const response = await axios.post("/api/stores", values);
       // console.log(response.data);
-      toast.success("Store created");
+      // toast.success("Store created");
+      window.location.assign(`/${response.data.id}`);
     } catch (error) {
       toast.error("Error creating store");
       // console.log("[STORE_MODAL_SUBMIT]", error);
